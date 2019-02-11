@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow: hidden;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cccccc;
+    background-image: url(background-menu-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.menu-container>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu--btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(86, 91, 94, 0.3);
+    width: 400px;
+    height: 300px;
+    margin: 50px;
+    color: rgb(254, 252, 252);
+}
+
+.menu--btn i {
+    color: inherit;
+    font-size: 6em;
+}
+
+.menu--btn:hover {
+    background-color: rgba(86, 91, 94, 0.05);
+    color: rgba(254, 252, 252, 0.4);
+}
+
+.menu--gorizontal-line i {
+    color: rgba(86, 91, 94, 0.3);
+    font-size: 3em;
+}
+
+.menu--gorizontal-line i:hover {
+    color: rgb(254, 252, 252);
+}
+
+.menu--vertical-line {
+    display: flex;
+    align-items: center;
+}
+
+.menu--vertical-line::after {
+    display: flex;
+    content: '';
+    height: 300px;
+    border-right: 1px solid rgb(254, 252, 252);
+}
+
+.menu--gorizontal-line::before,
+.menu--gorizontal-line::after {
+    display: flex;
+    content: '';
+    width: 400px;
+    border-top: 1px solid rgb(254, 252, 252);
+    margin: 0 40px;
+}
+
+.menu--btn:hover {
+    background-color: rgba(53, 56, 58, 0.2);
+}

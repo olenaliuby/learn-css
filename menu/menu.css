@@ -1,0 +1,75 @@
+/* reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 120px 10px 0 10px;
+}
+
+.container {
+    padding-top: 60px;
+    background: #3e4344;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    background: #4b5155 linear-gradient(#4b5155, #3e4344);
+    border-top: 2px solid #363b3b;
+    border-bottom: 2px solid #363b3b;
+    box-shadow: 0px 6px 0px 0px rgba(221, 221, 221, 1);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    border-left: 2px solid #363b3b;
+}
+
+nav li:last-child {
+    border-right: 2px solid #363b3b;
+}
+
+nav a {
+    display: block;
+    padding: 15px 15px 12px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e2e8e4;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+nav li.yellow a:hover {
+    border-bottom: 3px solid #c0bb00;
+}
+
+nav li.green a:hover {
+    border-bottom: 3px solid #00cd0a;
+}
+
+nav li.blue a:hover {
+    border-bottom: 3px solid #00abc3;
+}
+
+nav li.red a:hover {
+    border-bottom: 3px solid #b14745;
+}
+
+nav li.purple a:hover {
+    border-bottom: 3px solid #cf47be;
+}
+
+nav li:active {
+    box-shadow: inset 1px -3px 24px 3px rgba(45, 50, 51, 1);
+}

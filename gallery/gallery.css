@@ -1,0 +1,38 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #99f896;
+}
+
+.gallery {
+    display: flex;
+    margin-top: 100px;
+}
+
+.gallery-item {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transform: perspective(600px) rotateY(45deg);
+
+}
+
+.gallery-item:nth-child(2n) {
+    margin-top: 50px;
+}
+
+.gallery-item:not(:last-child) {
+    margin-right: -169px;
+}
+
+.gallery-item:hover {
+    transform: perspective(0);
+    margin-left: 20px;
+    margin-right: 0;
+}
